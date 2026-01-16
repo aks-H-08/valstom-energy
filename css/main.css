@@ -26477,7 +26477,7 @@ a img.aligncenter {
     font-family: "Font Awesome 5 Free", sans-serif;
     font-size: 10px;
     font-weight: 600;
-    position: relative;
+    position: absolute;
     right: -8px;
     top: 50%;
     -webkit-transform: translateY(-50%);
