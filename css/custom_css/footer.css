@@ -1,0 +1,231 @@
+/* ==============================
+   VALSTOM FOOTER 
+============================== */
+
+.ve-footer{
+  position: relative;
+  overflow: hidden;
+  font-family: inherit;
+
+  background: #2a0738;
+  color: rgba(255,255,255,0.9);
+
+  padding: 64px 0 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* subtle texture using only shades */
+.ve-footer::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255,255,255,0.06), transparent 55%),
+    radial-gradient(circle at 82% 28%, rgba(0,0,0,0.28), transparent 60%),
+    radial-gradient(circle at 50% 110%, rgba(0,0,0,0.38), transparent 65%);
+}
+
+.ve-footer .container{
+  position:relative;
+  z-index:2;
+}
+
+/* GRID */
+.ve-footer-grid{
+  display:grid;
+  grid-template-columns: 1.35fr 0.85fr 1.2fr;
+  gap: 46px;
+  align-items: start;
+  padding-bottom: 38px;
+}
+
+/* ================= BRAND ================= */
+.ve-footer-logo{
+  display:flex;
+  align-items:center;
+  gap: 14px;
+  text-decoration:none !important;
+}
+
+.ve-footer-logo img{
+  width: 58px;
+  height: auto;
+  display:block;
+  filter: drop-shadow(0 18px 40px rgba(0,0,0,0.45));
+}
+
+.ve-footer-brand-title{
+  display:flex;
+  gap: 8px;
+  align-items: baseline;
+  line-height: 1;
+}
+
+.ve-brand-main{
+  font-size: 20px;
+  font-weight: 800;              /*  reduced */
+  letter-spacing: 0.8px;
+  color: #fff;
+}
+
+.ve-brand-sub{
+  font-size: 20px;
+  font-weight: 700;              /*  reduced */
+  letter-spacing: 0.7px;
+  color: rgba(255,255,255,0.75);
+}
+
+.ve-footer-brand-tag{
+  margin-top: 10px;
+  max-width: 420px;
+
+  font-size: 14px;               /*  readable */
+  font-weight: 450;              /*  light */
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+  color: rgba(255,255,255,0.74);
+}
+
+/* ================= TITLES ================= */
+.ve-footer-title{
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 650;              /*  reduced */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+}
+
+/* ================= LINKS ================= */
+.ve-footer-links{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+}
+
+.ve-footer-links a{
+  display:inline-flex;
+  width: fit-content;
+  text-decoration:none !important;
+
+  font-size: 16px;                /*  bigger */
+  font-weight: 520;               /*  less bold */
+  letter-spacing: 0.2px;
+  line-height: 1.55;
+
+  color: rgba(255,255,255,0.9);
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.ve-footer-links a:hover{
+  transform: translateX(6px);
+  opacity: 1;
+}
+
+/* ================= CTA (Right Column) ================= */
+.ve-footer-cta{
+  justify-self:end;
+  max-width: 460px;
+}
+
+.ve-footer-text{
+  margin: 0 0 18px;
+  font-size: 14px;
+  line-height: 1.75;
+  font-weight: 450;               /*  light */
+  color: rgba(255,255,255,0.74);
+}
+
+.ve-footer-text b{
+  font-weight: 650;               /*  reduced bold */
+  color: rgba(255,255,255,0.96);
+}
+
+/* CTA button: minimal luxe */
+.ve-footer-btn{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap: 12px;
+  text-decoration:none !important;
+
+  padding: 13px 20px;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 650;               /*  reduced */
+  letter-spacing: 0.15px;
+
+  color: #2a0738;
+  background: #fff;
+  border: 1px solid rgba(255,255,255,0.14);
+
+  box-shadow: 0 18px 55px rgba(0,0,0,0.40);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.ve-footer-btn span{
+  font-size: 18px;
+  line-height: 1;
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.ve-footer-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 28px 85px rgba(0,0,0,0.52);
+  filter: brightness(1.02);
+}
+
+.ve-footer-btn:active{
+  transform: translateY(0);
+}
+
+/* ================= BOTTOM BAR ================= */
+/* ================= BOTTOM BAR FIX ================= */
+.ve-footer-bottom{
+  padding: 18px 0;
+
+  border-top: 1px solid rgba(255,255,255,0.10);
+
+  /* better readability */
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: rgba(255,255,255,0.88);
+}
+
+/* Optional: subtle top glow line for premium separation */
+.ve-footer-bottom::before{
+  content:"";
+  display:block;
+  height:1px;
+  background: rgba(255,255,255,0.05);
+  margin-bottom: 14px;
+}
+
+
+/* ================= Responsive ================= */
+@media (max-width: 991px){
+  .ve-footer{
+    padding-top: 44px;
+  }
+
+  .ve-footer-grid{
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-bottom: 26px;
+  }
+
+  .ve-footer-cta{
+    justify-self: start;
+    max-width: 100%;
+  }
+
+  .ve-footer-links a{
+    font-size: 15.5px;
+  }
+}
