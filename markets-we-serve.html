@@ -347,104 +347,129 @@
             </section>
 
             <!-- Markets We Serve -->
-            <section class="val-markets-section" id="markets">
+            <section class="val-mwso" id="markets-overview">
                 <div class="container">
 
-                    <div class="val-markets-head">
-                        <h2 class="val-markets-title">Markets We Serve</h2>
-                        <p class="val-markets-sub">
-                            Valstom Energy supports a wide range of <b>Energy, Process, and Industrial Sectors</b>,
-                            supplying integrated equipment packages aligned with project and operational requirements.
+                    <!-- Heading -->
+                    <div class="val-mwso__head">
+                        <h2 class="val-mwso__title">Markets We Serve</h2>
+                        <p class="val-mwso__intro">
+                            Valstom Energy supports Energy, Process, and Industrial Sectors by supplying integrated
+                            equipment packages aligned with sector-specific operating conditions, applicable technical
+                            standards, and project timelines.
+                            <br><br>
+                            Our focus is on critical flow control, piping, pumping, and associated equipment, delivered
+                            with the required documentation, compliance, and execution reliability to support project
+                            and
+                            operational requirements.
                         </p>
                     </div>
 
-                    <div class="val-orbit-wrap">
-                        <div class="val-orbit">
+                    <!-- Center Radios -->
+                    <div class="val-mwso__filters" role="tablist" aria-label="Markets Filter">
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="upstream" checked>
+                            <span>Upstream</span>
+                        </label>
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="midstream">
+                            <span>Midstream</span>
+                        </label>
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="downstream">
+                            <span>Downstream</span>
+                        </label>
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="petrochemical">
+                            <span>Petrochemical</span>
+                        </label>
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="power">
+                            <span>Power</span>
+                        </label>
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="lng">
+                            <span>LNG</span>
+                        </label>
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="hydrogen">
+                            <span>Hydrogen</span>
+                        </label>
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="water">
+                            <span>Water</span>
+                        </label>
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="mining">
+                            <span>Mining</span>
+                        </label>
+                        <label class="val-mwso-pill">
+                            <input type="radio" name="mwso" value="process">
+                            <span>Process</span>
+                        </label>
+                    </div>
 
-                            <!-- ring -->
-                            <div class="val-orbit-ring"></div>
+                    <!-- Main WOW Card -->
+                    <div class="val-mwso__stage">
+                        <div class="val-mwso-card" id="mwsoCard">
 
-                            <!-- outer rotating group -->
-                            <div class="val-orbit-rotor">
-
-                                <!-- angles are fixed & equally spaced (NO OVERLAP) -->
-                                <button class="val-orbit-item is-active" style="--a:-90deg" type="button">
-                                    <span class="val-orbit-upright">
-                                        <span class="val-orbit-img">
-                                            <img src="images/services/upstream.jpg" alt="Upstream">
-                                        </span>
-                                        <span class="val-orbit-label">Upstream</span>
-                                    </span>
-                                </button>
-
-                                <button class="val-orbit-item" style="--a:-38.6deg" type="button">
-                                    <span class="val-orbit-upright">
-                                        <span class="val-orbit-img">
-                                            <img src="images/services/midstream.jpg" alt="Midstream">
-                                        </span>
-                                        <span class="val-orbit-label">Midstream</span>
-                                    </span>
-                                </button>
-
-                                <button class="val-orbit-item" style="--a:12.9deg" type="button">
-                                    <span class="val-orbit-upright">
-                                        <span class="val-orbit-img">
-                                            <img src="images/services/downstream.jpg" alt="Downstream">
-                                        </span>
-                                        <span class="val-orbit-label">Downstream</span>
-                                    </span>
-                                </button>
-
-                                <button class="val-orbit-item" style="--a:64.3deg" type="button">
-                                    <span class="val-orbit-upright">
-                                        <span class="val-orbit-img">
-                                            <img src="images/services/power.jpg" alt="Power">
-                                        </span>
-                                        <span class="val-orbit-label">Power</span>
-                                    </span>
-                                </button>
-
-                                <button class="val-orbit-item" style="--a:115.7deg" type="button">
-                                    <span class="val-orbit-upright">
-                                        <span class="val-orbit-img">
-                                            <img src="images/services/lng.jpg" alt="LNG">
-                                        </span>
-                                        <span class="val-orbit-label">LNG</span>
-                                    </span>
-                                </button>
-
-                                <button class="val-orbit-item" style="--a:167.1deg" type="button">
-                                    <span class="val-orbit-upright">
-                                        <span class="val-orbit-img">
-                                            <img src="images/services/hydrogen.jpg" alt="Hydrogen">
-                                        </span>
-                                        <span class="val-orbit-label">Hydrogen</span>
-                                    </span>
-                                </button>
-
-                                <button class="val-orbit-item" style="--a:218.6deg" type="button">
-                                    <span class="val-orbit-upright">
-                                        <span class="val-orbit-img">
-                                            <img src="images/services/water.jpg" alt="Water">
-                                        </span>
-                                        <span class="val-orbit-label">Water</span>
-                                    </span>
-                                </button>
-
+                            <!-- Image -->
+                            <div class="val-mwso-card__media">
+                                <img id="mwsoImg" src="images/markets/upstream.jpg" alt="Upstream market">
+                                <div class="val-mwso-card__glass"></div>
+                                <div class="val-mwso-card__shine"></div>
                             </div>
 
-                            <!-- center -->
-                            <div class="val-orbit-center">
-                                <span class="val-orbit-center-bg"></span>
-                                <span class="val-orbit-center-text">Markets<br>We Serve</span>
-                            </div>
+                            <!-- Content -->
+                            <div class="val-mwso-card__content">
+                                <div class="val-mwso-card__topline">
+                                    <span class="val-mwso-tag" id="mwsoTag">
+                                        <i class="fas fa-industry"></i> Energy Sector
+                                    </span>
+                                </div>
 
+                                <h3 class="val-mwso-card__title" id="mwsoTitle">Upstream</h3>
+                                <p class="val-mwso-card__desc" id="mwsoDesc">
+                                    Supporting exploration and production activities with equipment suitable for
+                                    high-pressure,
+                                    high-temperature, and critical service environments.
+                                </p>
+
+                                <div class="val-mwso-card__scope">
+                                    <h4 class="val-mwso-card__scopeTitle">
+                                        <i class="fas fa-check-circle"></i> Supply Scope Includes
+                                    </h4>
+
+                                    <ul class="val-mwso-card__list" id="mwsoList">
+                                        <li>Valves and Flow Control Equipment</li>
+                                        <li>Wellhead and Drilling Equipment</li>
+                                        <li>Actuation and Automation Packages</li>
+                                        <li>Shutdown and urgent requirement support</li>
+                                    </ul>
+                                </div>
+
+                                <div class="val-mwso-card__actions">
+                                    <a href="products.html" class="val-mwso-btn val-mwso-btn--ghost">
+                                        <i class="fas fa-box"></i> Explore Products
+                                    </a>
+                                    <a href="contact.html" class="val-mwso-btn">
+                                        Get Quote <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- floating micro cards  -->
+                        <div class="val-mwso-floats" aria-hidden="true">
+                            <div class="val-mwso-float val-f1"><i class="fas fa-file-alt"></i> Markets We Serve</div>
+                            <div class="val-mwso-float val-f2"><i class="fas fa-shield-alt"></i> Compliance</div>
+                            <div class="val-mwso-float val-f3"><i class="fas fa-cogs"></i> Integrated Packages</div>
                         </div>
                     </div>
+
                 </div>
             </section>
-
-
 
             <!-- Footer START -->
 
@@ -501,46 +526,191 @@
     <script src="js/compressed.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Custom CSS -->
+    <!-- Custom JS -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
 
-            const items = Array.from(document.querySelectorAll(".val-orbit-item"));
-            if (!items.length) return;
+            const data = {
+                upstream: {
+                    tag: `<i class="fas fa-oil-can"></i> Exploration & Production`,
+                    title: "Upstream",
+                    desc: "Supporting exploration and production activities with equipment suitable for high-pressure, high-temperature, and critical service environments.",
+                    img: "images/services/upstream.jpg",
+                    list: [
+                        "Valves and Flow Control Equipment",
+                        "Wellhead and Drilling Equipment",
+                        "Actuation and Automation Packages",
+                        "Shutdown and urgent requirement support"
+                    ]
+                },
+                midstream: {
+                    tag: `<i class="fas fa-route"></i> Transportation & Storage`,
+                    title: "Midstream",
+                    desc: "Supplying equipment for transportation, storage, and processing infrastructure, where reliability, safety, and compliance are essential.",
+                    img: "images/services/midstream.jpg",
+                    list: [
+                        "Pipeline and Isolation Valves",
+                        "Pressure Control and Safety Valves",
+                        "Pipes, Fittings, and Flanges",
+                        "Project and maintenance support"
+                    ]
+                },
+                downstream: {
+                    tag: `<i class="fas fa-industry"></i> Refining & Processing`,
+                    title: "Downstream",
+                    desc: "Delivering specification-driven equipment packages for continuous process operations and safety-critical applications.",
+                    img: "images/services/downstream.jpg",
+                    list: [
+                        "Process and Control Valves",
+                        "Pressure Safety and Relief Valves",
+                        "Specialty and Severe-Service Valves",
+                        "Integrated testing and documentation support"
+                    ]
+                },
+                petrochemical: {
+                    tag: `<i class="fas fa-flask"></i> Petrochemical Facilities`,
+                    title: "Petrochemical",
+                    desc: "Supporting petrochemical facilities with equipment packages designed for process safety, material integrity, and continuous operation.",
+                    img: "images/services/lng.jpg",
+                    list: [
+                        "Process and Isolation Valves",
+                        "Control and Pressure-Regulating Valves",
+                        "Actuated Valve Systems",
+                        "Pipes, Steel Plates, and Bars",
+                        "Compliance documentation and inspection coordination"
+                    ]
+                },
+                power: {
+                    tag: `<i class="fas fa-bolt"></i> Power Facilities`,
+                    title: "Power Generation",
+                    desc: "Supplying equipment for conventional and industrial power facilities requiring operational reliability and regulatory compliance.",
+                    img: "images/services/power.jpg",
+                    list: [
+                        "Isolation and Control Valves",
+                        "Pressure Control Equipment",
+                        "Pipes, Plates, and Bars",
+                        "Maintenance and shutdown support"
+                    ]
+                },
+                lng: {
+                    tag: `<i class="fas fa-snowflake"></i> Low Temperature Service`,
+                    title: "LNG & Cryogenic Facilities",
+                    desc: "Providing materials and flow-control solutions suitable for low-temperature and cryogenic service conditions.",
+                    img: "images/services/lng.jpg",
+                    list: [
+                        "Cryogenic and Low-Temperature Valves",
+                        "Actuated Valve Packages",
+                        "Materials suitable for LNG service",
+                        "Project-specific compliance support"
+                    ]
+                },
+                hydrogen: {
+                    tag: `<i class="fas fa-atom"></i> New Energy`,
+                    title: "Hydrogen & Energy Transition",
+                    desc: "Supporting evolving energy applications with compatible equipment and controlled flow solutions for emerging technologies.",
+                    img: "images/services/hydrogen.jpg",
+                    list: [
+                        "Hydrogen Service Valves",
+                        "Specialty Materials for New Energy Applications",
+                        "Automation and Control Support",
+                        "Technical coordination for emerging projects"
+                    ]
+                },
+                water: {
+                    tag: `<i class="fas fa-water"></i> Utilities & Treatment`,
+                    title: "Water & Desalination",
+                    desc: "Supporting water treatment and utility operations with corrosion-resistant and long-life equipment.",
+                    img: "images/services/water.jpg",
+                    list: [
+                        "Valves for Treatment and Distribution",
+                        "Pipes, Fittings, and Flanges",
+                        "Pressure Control Equipment",
+                        "Long-term operational support"
+                    ]
+                },
+                mining: {
+                    tag: `<i class="fas fa-mountain"></i> Severe Service`,
+                    title: "Mining & Metals",
+                    desc: "Serving mining, mineral processing, and metals industries with durable equipment designed for demanding operating conditions.",
+                    img: "images/services/mistream.jpg",
+                    list: [
+                        "Severe-Service Valves",
+                        "Pipes, Plates, and Bars",
+                        "Abrasion- and Corrosion-Resistant Materials",
+                        "Project and operational supply support"
+                    ]
+                },
+                process: {
+                    tag: `<i class="fas fa-cogs"></i> Industrial Processing`,
+                    title: "Process Industries",
+                    desc: "Supplying equipment for industries where controlled flow, material compatibility, and process reliability are critical.",
+                    img: "images/services/hydrogen.jpg",
+                    list: [
+                        "Chemical and Specialty Chemical Processing",
+                        "Food and Beverage Processing",
+                        "Pharmaceutical and Process Manufacturing"
+                    ]
+                }
+            };
 
-            let idx = items.findIndex(x => x.classList.contains("is-active"));
-            if (idx < 0) idx = 0;
+            const card = document.getElementById("mwsoCard");
+            const tagEl = document.getElementById("mwsoTag");
+            const titleEl = document.getElementById("mwsoTitle");
+            const descEl = document.getElementById("mwsoDesc");
+            const imgEl = document.getElementById("mwsoImg");
+            const listEl = document.getElementById("mwsoList");
 
-            function setActive(i) {
-                items.forEach(b => b.classList.remove("is-active"));
-                items[i].classList.add("is-active");
-                idx = i;
+            function setMarket(key) {
+                const m = data[key];
+                if (!m) return;
+
+                card.classList.add("is-switching");
+
+                // preload image for smoother swap
+                const tmp = new Image();
+                tmp.src = m.img;
+                tmp.onload = () => {
+                    imgEl.src = m.img;
+                };
+
+                tagEl.innerHTML = m.tag;
+                titleEl.textContent = m.title;
+                descEl.textContent = m.desc;
+
+                listEl.innerHTML = m.list.map(x => `<li>${x}</li>`).join("");
+
+                setTimeout(() => card.classList.remove("is-switching"), 420);
             }
 
-            // click select
-            items.forEach((b, i) => {
-                b.addEventListener("click", () => setActive(i));
+            // radio events
+            document.querySelectorAll('.val-mwso-pill input[name="mwso"]').forEach(r => {
+                r.addEventListener("change", (e) => setMarket(e.target.value));
             });
 
-            // auto highlight (nice)
-            let timer = setInterval(() => {
-                setActive((idx + 1) % items.length);
-            }, 2400);
+            // optional WOW tilt (desktop only)
+            const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-            // pause highlight when hovering orbit
-            const orbitWrap = document.querySelector(".val-orbit-wrap");
-            if (orbitWrap) {
-                orbitWrap.addEventListener("mouseenter", () => clearInterval(timer));
-                orbitWrap.addEventListener("mouseleave", () => {
-                    timer = setInterval(() => setActive((idx + 1) % items.length), 2400);
+            if (!prefersReduced && window.innerWidth > 992) {
+                card.addEventListener("mousemove", (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    const rx = ((y / rect.height) - 0.5) * -6;
+                    const ry = ((x / rect.width) - 0.5) * 10;
+
+                    card.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+                });
+
+                card.addEventListener("mouseleave", () => {
+                    card.style.transform = "rotateX(0deg) rotateY(0deg)";
                 });
             }
 
+            // init
+            setMarket("upstream");
         });
     </script>
 
-
-
 </body>
-
 </html>
