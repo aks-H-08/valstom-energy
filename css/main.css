@@ -26602,7 +26602,7 @@ a img.aligncenter {
   }
 
   .page_header .logo img {
-    max-width: 120px; /* slightly smaller logo to free space */
+    width: 300px;
   }
 }
 
