@@ -1,0 +1,542 @@
+/* ==========================
+    HEADER
+========================== */
+.ve-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 16px 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.ve-header-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+}
+
+/* ==========================
+    LOGO SECTION
+========================== */
+.ve-logo-wrap {
+    background: #fff;
+    padding: 12px 24px;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.ve-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.ve-logo img {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+/* ==========================
+    NAVIGATION
+========================== */
+.ve-nav {
+    flex: 1;
+    background: #5b1b6e;
+    border-radius: 0 12px 12px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.ve-nav-list {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.ve-nav-list > li {
+    position: relative;
+}
+
+.ve-nav-list a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.ve-nav-list a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.ve-nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.ve-nav-list a:hover::after {
+    width: calc(100% - 28px);
+}
+
+/* ==========================
+    DROPDOWN MENU
+========================== */
+.ve-dropdown {
+    position: relative;
+}
+
+.ve-drop-toggle {
+    cursor: pointer;
+    position: relative;
+}
+
+.ve-drop-toggle i {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+    margin-left: 4px;
+}
+
+.ve-dropdown.open .ve-drop-toggle i {
+    transform: rotate(180deg);
+}
+
+.ve-drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-radius: 12px;
+    padding: 12px 0;
+    min-width: 280px;
+    box-shadow: 0 12px 40px rgba(91, 27, 110, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 10000;
+    list-style: none;
+    margin-top: 8px;
+    border: 1px solid rgba(91, 27, 110, 0.1);
+}
+
+.ve-dropdown:hover .ve-drop-menu,
+.ve-dropdown.open .ve-drop-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.ve-drop-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 24px;
+    width: 16px;
+    height: 16px;
+    background: white;
+    transform: rotate(45deg);
+    border-left: 1px solid rgba(91, 27, 110, 0.1);
+    border-top: 1px solid rgba(91, 27, 110, 0.1);
+}
+
+.ve-drop-menu li {
+    list-style: none;
+}
+
+.ve-drop-menu a {
+    color: #333;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0;
+    margin: 2px 0;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.ve-drop-menu a::after {
+    display: none;
+}
+
+.ve-drop-menu a:hover {
+    background: #f8f3fa;
+    color: #5b1b6e;
+    padding-left: 32px;
+}
+
+.ve-drop-menu a::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: #5b1b6e;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.ve-drop-menu a:hover::before {
+    opacity: 1;
+}
+
+/* ==========================
+    CONTACT BUTTON
+========================== */
+.ve-contact-btn {
+    margin-left: auto;
+    padding: 10px 20px;
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.ve-contact-btn:hover {
+    background: #fff;
+    color: #5b1b6e;
+    border-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(91, 27, 110, 0.3);
+}
+
+.ve-contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.7s ease;
+}
+
+.ve-contact-btn:hover::before {
+    left: 100%;
+}
+
+/* ==========================
+    MOBILE MENU TOGGLE
+========================== */
+.ve-menu-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 16px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: none !important;
+}
+
+.ve-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    background: #5b1b6e;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.ve-menu-toggle.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.ve-menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.ve-menu-toggle.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* ==========================
+    RESPONSIVE - TABLET
+========================== */
+@media (max-width: 1024px) {
+    .ve-header {
+        padding: 12px 16px;
+    }
+
+    .ve-header-inner {
+        gap: 0;
+    }
+
+    .ve-logo-wrap {
+        padding: 10px 18px;
+    }
+
+    .ve-logo img {
+        height: 36px;
+    }
+
+    .ve-nav {
+        padding: 0 20px;
+    }
+
+    .ve-nav-list {
+        gap: 4px;
+    }
+
+    .ve-nav-list a {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+    .ve-contact-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .ve-drop-menu {
+        min-width: 240px;
+    }
+}
+
+/* ==========================
+    RESPONSIVE - MOBILE
+========================== */
+@media (max-width: 768px) {
+    .ve-header {
+        padding: 12px 16px;
+    }
+
+    .ve-header-inner {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .ve-logo-wrap {
+        border-radius: 12px 12px 0 0;
+        padding: 10px 16px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .ve-logo img {
+        height: 32px;
+    }
+
+    /* SHOW MOBILE TOGGLE */
+    .ve-menu-toggle {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ve-nav {
+        border-radius: 0 0 12px 12px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+        background: #5b1b6e;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    .ve-nav.open {
+        max-height: 800px;
+    }
+
+    .ve-nav-list {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        padding: 16px 0;
+    }
+
+    .ve-nav-list > li {
+        width: 100%;
+    }
+
+    .ve-nav-list a {
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .ve-nav-list a::after {
+        display: none;
+    }
+
+    .ve-nav-list a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .ve-drop-menu {
+        position: static;
+        background: #4a1557;
+        border-radius: 0;
+        padding: 0 20px;
+        min-width: auto;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.3s ease;
+        margin: 0;
+        border: none;
+        border-left: 3px solid transparent;
+    }
+    
+    .ve-drop-menu::before {
+        display: none;
+    }
+    
+    .ve-dropdown.open .ve-drop-menu {
+        max-height: 400px;
+        padding: 8px 20px 12px;
+        border-left-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .ve-drop-menu a {
+        color: rgba(255, 255, 255, 0.9);
+        padding: 10px 0 10px 12px;
+        margin-left: 8px;
+        border-radius: 0;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .ve-drop-menu a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        padding-left: 20px;
+    }
+    
+    .ve-drop-menu a::before {
+        left: 0;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    
+    .ve-drop-menu a:hover::before {
+        background: #fff;
+    }
+    
+    .ve-drop-menu li:last-child a {
+        border-bottom: none;
+    }
+
+    .ve-contact-btn {
+        margin: 12px 20px 16px;
+        padding: 10px 20px;
+        display: inline-block;
+        text-align: center;
+        order: 10;
+        width: calc(100% - 40px);
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ve-header {
+        padding: 10px 12px;
+    }
+
+    .ve-logo-wrap {
+        padding: 8px 12px;
+    }
+
+    .ve-logo img {
+        height: 28px;
+    }
+
+    .ve-nav-list a {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .ve-drop-menu a {
+        font-size: 13px;
+    }
+
+    .ve-contact-btn {
+        margin: 10px 16px 12px;
+        width: calc(100% - 32px);
+        padding: 9px 16px;
+        font-size: 13px;
+    }
+}
+
+/* ==========================
+    SCROLL EFFECTS
+========================== */
+.ve-header.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 20px rgba(91, 27, 110, 0.15);
+    padding: 10px 20px;
+}
+
+.ve-header.scrolled .ve-logo-wrap {
+    padding: 8px 20px;
+}
+
+.ve-header.scrolled .ve-logo img {
+    height: 36px;
+}
+
+@media (max-width: 768px) {
+    .ve-header.scrolled {
+        padding: 8px 16px;
+    }
+    
+    .ve-header.scrolled .ve-logo-wrap {
+        padding: 8px 16px;
+    }
+}
