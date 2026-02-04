@@ -53,7 +53,7 @@ transform: scale(1.12);
 .ve-equipment-card h3 {
 font-size: 21px;
 font-weight: 700;
-color: #8b2d72;
+color: #70114e;
 margin: 22px 26px 12px;
 }
 
@@ -70,15 +70,15 @@ display: inline-block;
 margin: 0 26px 28px;
 padding: 12px 26px;
 border-radius: 30px;
-border: 2px solid #8b2d72;
-color: #8b2d72;
+border: 2px solid #70114e;
+color: #70114e;
 text-decoration: none;
 font-weight: 600;
 transition: all 0.3s ease;
 }
 
 .ve-card-btn:hover {
-background: #8b2d72;
+background: #70114e;
 color: #fff;
 }
 
@@ -291,7 +291,7 @@ animation: veSlideRight 1s ease forwards;
 display: inline-block;
 font-size: 13px;
 font-weight: 700;
-color: #8b2d72;
+color: #70114e;
 letter-spacing: 1px;
 margin-bottom: 12px;
 }
@@ -328,7 +328,7 @@ line-height: 1.5;
 }
 
 .ve-quality-list li span {
-color: #8b2d72;
+color: #70114e;
 font-weight: 700;
 font-size: 18px;
 }
@@ -338,15 +338,15 @@ font-size: 18px;
 display: inline-block;
 padding: 14px 34px;
 border-radius: 40px;
-border: 2px solid #8b2d72;
-color: #8b2d72;
+border: 2px solid #70114e;
+color: #70114e;
 font-weight: 600;
 text-decoration: none;
 transition: all 0.35s ease;
 }
 
 .ve-quality-btn:hover {
-background: #8b2d72;
+background: #70114e;
 color: #fff;
 transform: translateX(6px);
 }
@@ -441,7 +441,7 @@ display: inline-block;
 font-size: 13px;
 font-weight: 700;
 letter-spacing: 1px;
-color: #8b2d72;
+color: #70114e;
 margin-bottom: 12px;
 }
 
@@ -472,15 +472,15 @@ margin-bottom: 34px;
 display: inline-block;
 padding: 14px 36px;
 border-radius: 40px;
-border: 2px solid #8b2d72;
-color: #8b2d72;
+border: 2px solid #70114e;
+color: #70114e;
 font-weight: 600;
 text-decoration: none;
 transition: all 0.35s ease;
 }
 
 .ve-services-btn:hover {
-background: #8b2d72;
+background: #70114e;
 color: #fff;
 transform: translateX(6px);
 }
@@ -581,7 +581,7 @@ display: inline-block;
 font-size: 13px;
 font-weight: 700;
 letter-spacing: 1px;
-color: #8b2d72;
+color: #70114e;
 margin-bottom: 14px;
 }
 
@@ -594,7 +594,7 @@ margin-bottom: 22px;
 }
 
 .ve-who-content h2 span {
-color: #8b2d72;
+color: #70114e;
 }
 
 .ve-who-main {
@@ -616,15 +616,15 @@ margin-bottom: 34px;
 display: inline-block;
 padding: 14px 34px;
 border-radius: 40px;
-border: 2px solid #8b2d72;
-color: #8b2d72;
+border: 2px solid #70114e;
+color: #70114e;
 font-weight: 600;
 text-decoration: none;
 transition: all 0.3s ease;
 }
 
 .ve-who-btn:hover {
-background: #8b2d72;
+background: #70114e;
 color: #fff;
 transform: translateX(4px);
 }
@@ -692,7 +692,7 @@ font-size: 15px;
 .approved-title {
   font-size: 2.3rem;
   margin-bottom: 10px;
-  color: #5b1b6e;
+  color: #70114e;
 }
 
 .approved-subtitle {

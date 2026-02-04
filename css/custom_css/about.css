@@ -71,7 +71,7 @@
 
 .industry-card:hover {
   transform: translateY(-6px);
-  background: #6e177170;
+  background: #70114e70;
 }
 
 .capabilities h3 {
@@ -86,7 +86,7 @@
 }
 
 .cap-card {
-  background: linear-gradient(145deg, #33133f, #6e1771);
+  background: linear-gradient(145deg, #33133f, #70114e);
   padding: 1.5rem;
   border-radius: 12px;
   border-left: 4px solid var(--accent);
@@ -168,7 +168,7 @@
 /* VISION SECTION */
 #valstom-vision {
   padding: 5rem 1.5rem;
-  background: linear-gradient(180deg, #6e1771 0%, #3c093e 100%);
+  background: linear-gradient(180deg, #70114e 0%, #70114e 100%);
 }
 
 .vision-container {
@@ -401,7 +401,7 @@
   content: "";
   width: 90px;
   height: 4px;
-  background-color: #6e1771;
+  background-color: #70114e;
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -438,7 +438,7 @@
 }
 
 .single-value-card h4 {
-  color: #6e1771;
+  color: #70114e;
   font-size: 1.1rem;
   margin-bottom: 8px;
 }
@@ -521,7 +521,7 @@
   content: "✔";
   position: absolute;
   left: 0;
-  color: #6e1771;
+  color: #70114e;
   font-size: 16px;
 }
 

@@ -51,7 +51,7 @@
 ========================== */
 .ve-nav {
     flex: 1;
-    background: #5b1b6e;
+    background: #70114e;
     border-radius: 0 12px 12px 0;
     display: flex;
     align-items: center;
@@ -193,7 +193,7 @@
 
 .ve-drop-menu a:hover {
     background: #f8f3fa;
-    color: #5b1b6e;
+    color: #70114e;
     padding-left: 32px;
 }
 
@@ -205,7 +205,7 @@
     transform: translateY(-50%);
     width: 6px;
     height: 6px;
-    background: #5b1b6e;
+    background: #70114e;
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.2s ease;
@@ -237,7 +237,7 @@
 
 .ve-contact-btn:hover {
     background: #fff;
-    color: #5b1b6e;
+    color: #70114e;
     border-color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(91, 27, 110, 0.3);
@@ -279,7 +279,7 @@
     display: block;
     width: 24px;
     height: 2.5px;
-    background: #5b1b6e;
+    background: #70114e;
     margin: 5px 0;
     border-radius: 2px;
     transition: all 0.3s ease;
@@ -377,7 +377,7 @@
         flex-direction: column;
         align-items: stretch;
         padding: 0;
-        background: #5b1b6e;
+        background: #70114e;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease;
