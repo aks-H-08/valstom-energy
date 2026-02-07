@@ -38,28 +38,70 @@
 			<div id = "header-include"> </div>
 			<!-- Header End -->
 			
-			<section id="ve-hero-video">
-				<!-- VIDEO BACKGROUND -->
-				<video class="ve-hero-bg-video" autoplay muted loop playsinline>
-					<source src="videos/city_view.mp4" type="video/mp4">
-				</video>
+			<section id="ve-bgvideo-slider">
+				<div class="ve-bgvideo-wrapper">
 
-				<!-- OVERLAY -->
-				<div class="ve-hero-overlay"></div>
-
-				<!-- CONTENT -->
-				<div class="ve-hero-content">
-					<div class="ve-bubble-card">
-					<h1>Your Integrated Package<br>Solutions Partner</h1>
-					<p>
-						Project-Ready Supply Packages For<br>
-						Critical Energy Applications.
-					</p>
-
-					<a href="#" class="ve-hero-btn">View Our Capabilities</a>
+					<!-- SLIDE 1 -->
+					<div class="ve-bgvideo-slide active">
+					<video class="ve-bgvideo-media" autoplay muted loop playsinline>
+						<source src="videos/city_view.mp4" type="video/mp4" />
+					</video>
+					<div class="ve-bgvideo-overlay"></div>
+					<div class="ve-bgvideo-content">
+						<h1>Integrated Package<br />Solutions Partner</h1>
+						<p>Delivering complete, coordinated solutions for the energy sector.</p>
 					</div>
+					</div>
+
+					<!-- SLIDE 2 -->
+					<div class="ve-bgvideo-slide">
+					<video class="ve-bgvideo-media" autoplay muted loop playsinline>
+						<source src="videos/oil_company.mp4" type="video/mp4" />
+					</video>
+					<div class="ve-bgvideo-overlay"></div>
+					<div class="ve-bgvideo-content">
+						<h1>Engineered for<br />Critical Projects</h1>
+						<p>Supporting complex developments with precision and speed.</p>
+					</div>
+					</div>
+
+					<!-- SLIDE 3 -->
+					<div class="ve-bgvideo-slide">
+					<video class="ve-bgvideo-media" autoplay muted loop playsinline>
+						<source src="videos/pipes.mp4" type="video/mp4" />
+					</video>
+					<div class="ve-bgvideo-overlay"></div>
+					<div class="ve-bgvideo-content">
+						<h1>Reliable Supply.<br />Global Reach.</h1>
+						<p>Strategically sourced materials for time-critical operations.</p>
+					</div>
+					</div>
+
+					<!-- SLIDE 4 -->
+					<div class="ve-bgvideo-slide">
+					<video class="ve-bgvideo-media" autoplay muted loop playsinline>
+						<source src="videos/water_back.mp4" type="video/mp4" />
+					</video>
+					<div class="ve-bgvideo-overlay"></div>
+					<div class="ve-bgvideo-content">
+						<h1>Powering a<br />Sustainable Future</h1>
+						<p>Responsible solutions for a resilient global industry.</p>
+					</div>
+					</div>
+
+					<!-- BOTTOM WAVE -->
+					<div class="ve-bgvideo-wave">
+					<svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+						<path
+						d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,64C1200,53,1320,43,1380,37L1440,32L1440,120L0,120Z"
+						fill="#ffffff"
+						/>
+					</svg>
+					</div>
+
 				</div>
 			</section>
+
 
 			<section id="ve-who-we-are">
 				<div class="ve-who-container">
@@ -466,6 +508,17 @@
 
 	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		const slides = document.querySelectorAll(".ve-bgvideo-slide");
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }, 4000);
+	</script>
 
 
 	<!-- Google Map Script -->
