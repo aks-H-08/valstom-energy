@@ -169,6 +169,94 @@ img {
   color: rgba(255, 255, 255, 0.92);
 }
 
+/* ===============================
+   ABOUT HERO SECTION
+================================ */
+#ve-about-hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 520px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ve-about-hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* BACKGROUND IMAGE */
+.ve-about-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* DARK OVERLAY */
+.ve-about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 14, 20, 0.75),
+    rgba(10, 14, 20, 0.45)
+  );
+  z-index: 2;
+}
+
+/* CONTENT */
+.ve-about-hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: clamp(32px, 8vw, 120px);
+  max-width: 1000px;
+  color: #ffffff;
+}
+
+/* EYEBROW */
+.ve-about-eyebrow {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #fff; 
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+.ve-about-title {
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  #ve-about-hero {
+    height: 60vh;
+  }
+
+  .ve-about-hero-content {
+    padding: 0 24px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .ve-about-title {
+    font-size: 2.4rem;
+  }
+}
+
+
 /* =====================================================
    MISSION SECTION – AUTHORITY
 ===================================================== */
