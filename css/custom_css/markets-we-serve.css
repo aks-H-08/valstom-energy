@@ -10,8 +10,8 @@
 
 /* HERO */
 .vep-hero {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1.2fr 1fr; */
   min-height: 520px;
 }
 
@@ -116,7 +116,7 @@
 @media (max-width: 900px) {
   .vep-hero,
   .vep-block {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
 
   .vep-hero-text,
@@ -129,6 +129,141 @@
   }
 
   .vep-content h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* =====================================================
+   INDUSTRIAL & MANUFACTURING — AMPO STYLE
+===================================================== */
+
+#val-industrial-manufacturing {
+  font-family: "Montserrat", sans-serif;
+  color: #1f2933;
+  background: #ffffff;
+}
+
+/* HERO */
+.vim-hero {
+  /* display: grid;
+  grid-template-columns: 1.2fr 1fr; */
+  min-height: 520px;
+}
+
+.vim-hero-text {
+  padding: 90px;
+}
+
+.vim-hero-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.vim-lead {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  padding-left: 18px;
+  border-left: 4px solid #70114e;
+  margin-bottom: 22px;
+}
+
+.vim-hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #4b5563;
+}
+
+.vim-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BLOCKS */
+.vim-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 460px;
+}
+
+.vim-block:nth-child(even) {
+  background: #f6f7f9;
+}
+
+/* Reverse layout */
+.vim-reverse {
+  direction: rtl;
+}
+
+.vim-reverse > * {
+  direction: ltr;
+}
+
+/* IMAGE */
+.vim-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.vim-content {
+  padding: 80px 90px;
+}
+
+.vim-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.vim-content h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 4px;
+  height: 28px;
+  background: #70114e;
+}
+
+.vim-content p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 18px;
+  color: #4b5563;
+}
+
+/* LIST */
+.vim-content ul {
+  padding-left: 18px;
+}
+
+.vim-content li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .vim-hero,
+  .vim-block {
+    grid-template-columns: 1fr;
+  }
+
+  .vim-hero-text,
+  .vim-content {
+    padding: 50px 24px;
+  }
+
+  .vim-hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .vim-content h3 {
     font-size: 1.6rem;
   }
 }
