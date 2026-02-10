@@ -1,225 +1,942 @@
-/* =========================================
-   PRODUCT DETAIL SECTION 
-========================================= */
+/* =====================================================
+ VALVES & FLOW CONTROL — AMPO STYLE
+===================================================== */
 
-.product-detail-section{
-  padding: 38px 0;
+#val-valves-flow {
+  font-family: "Montserrat", sans-serif;
+  color: #1f2933;
   background: #ffffff;
 }
 
-/* Main card */
-.val-detail-card{
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 14px 34px rgba(0,0,0,0.06);
-  padding: 30px 26px;
+/* HERO */
+.vfc-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: 520px;
 }
 
-/* gradient accent top border */
-.val-detail-card::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 6px;
-  width: 100%;
-  background: linear-gradient(90deg, #7b2ff7, #9b2cff, #ff2e93);
+.vfc-hero-text {
+  padding: 90px;
 }
 
-/* Title row */
-.val-detail-header{
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.vfc-hero-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
   margin-bottom: 22px;
 }
 
-.val-detail-title{
-  margin: 0;
-  font-weight: 800;
-  font-size: 26px;
-  color: #111;
-  font-family: inherit;
+.vfc-lead {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  padding-left: 18px;
+  border-left: 4px solid #70114e;
+  margin-bottom: 22px;
 }
 
-.val-detail-line{
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg,
-    rgba(123,47,247,0.0),
-    rgba(123,47,247,0.35),
-    rgba(255,46,147,0.35),
-    rgba(123,47,247,0.0)
-  );
+.vfc-hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #4b5563;
 }
 
-/* Top row spacing */
-.val-detail-top{
-  margin-top: 12px;
-  margin-bottom: 28px;
-}
-
-/* Text */
-.val-detail-text{
-  font-family: inherit;
-  font-size: 15.5px;
-  line-height: 1.75;
-  color: rgba(17,17,17,0.88);
-}
-
-.val-detail-text p:last-child{ margin-bottom: 0; }
-
-/* Slider */
-.val-slider{
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #f6f6fb;
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
-}
-
-/* slide frame */
-.val-slider-frame{
-  position: relative;
-  width: 100%;
-  height: 270px;
-  overflow: hidden;
-}
-
-.val-slider-frame img{
+.vfc-hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  transform: scale(1);
-  transition: transform .5s ease;
 }
 
-.val-slider:hover img{
-  transform: scale(1.05);
+/* BLOCKS */
+.vfc-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 480px;
 }
 
-/* slider buttons */
-.val-slider-btn{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-  border: none;
-  z-index: 5;
-  cursor: pointer;
-
-  background: rgba(0,0,0,0.42);
-  color: #fff;
-  transition: all .25s ease;
+.vfc-block:nth-child(even) {
+  background: #f7f8fa;
 }
 
-.val-slider-btn span{
-  font-size: 30px;
-  line-height: 1;
-  position: relative;
-  top: -1px;
+/* Reverse */
+.vfc-reverse {
+  direction: rtl;
 }
 
-.val-slider-btn.prev{ left: 14px; }
-.val-slider-btn.next{ right: 14px; }
-
-.val-slider-btn:hover{
-  background: linear-gradient(90deg, #7b2ff7, #ff2e93);
-  box-shadow: 0 10px 22px rgba(123,47,247,0.20);
+.vfc-reverse > * {
+  direction: ltr;
 }
 
-/* Portfolio */
-.val-portfolio-row{
-  margin-top: 10px;
-}
-
-.val-portfolio-box{
+/* IMAGE */
+.vfc-image img {
+  width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #ffffff, #fbfbff);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 12px;
-  padding: 20px 18px;
-  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  object-fit: cover;
 }
 
-.val-portfolio-box:hover{
-  transform: translateY(-5px);
-  border-color: rgba(123,47,247,0.40);
-  box-shadow: 0 18px 38px rgba(123,47,247,0.10);
+/* CONTENT */
+.vfc-content {
+  padding: 80px 90px;
 }
 
-.val-portfolio-title{
-  margin-bottom: 14px;
-  font-weight: 800;
-  font-size: 16px;
-  color: #111;
+.vfc-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  border-left: 4px solid #70114e;
+}
+
+.vfc-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 22px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #374151;
+}
+
+.vfc-content p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+/* LIST */
+.vfc-content ul {
+  padding-left: 18px;
+}
+
+.vfc-content li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .vfc-hero,
+  .vfc-block {
+    grid-template-columns: 1fr;
+  }
+
+  .vfc-hero-text,
+  .vfc-content {
+    padding: 48px 24px;
+  }
+
+  .vfc-hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .vfc-content h3 {
+    font-size: 1.6rem;
+  }
+}
+
+#val-about-hero {
   position: relative;
-  padding-bottom: 10px;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/products_set/valves/LANDSCAPE-VALVES\ &\ FLOWCONTROL.jpg"); /* replace with your image */
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
 
-.val-portfolio-title::after{
-  content: "";
+#val-about-hero1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/products_set/actuation/LANDSCAPE\ -ACTUATION\ &\ AUTOMATION.png"); /* replace with your image */
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+#val-about-hero2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/products_set/pumps/4.LANDSCAPE-PUMPS.png"); /* replace with your image */
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+#val-about-hero3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/products_set/pipes/LANDSCAPE-PIPES\ \,\ FITTING\ &FLANGES.jpg"); /* replace with your image */
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+#val-about-hero4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/products_set/wellhead/5.LANDSCAPE-WELLHEAD\ &\ DRILLING\ EQUIPMENT\ -.png"); /* replace with your image */
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+#val-about-hero5 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/products_set/instrumentation/6.LANDSCAPE-INSTRUMENTATION.jpg"); /* replace with your image */
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* OVERLAY */
+.val-about-overlay {
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 62px;
-  height: 3px;
-  border-radius: 99px;
-  background: linear-gradient(90deg, #7b2ff7, #ff2e93);
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 24, 38, 0.85) 0%,
+    rgba(6, 24, 38, 0.65) 45%,
+    rgba(6, 24, 38, 0.25) 70%,
+    rgba(6, 24, 38, 0.1) 100%
+  );
+  z-index: 1;
+}
+
+/* CONTENT */
+.val-about-content {
+  position: relative;
+  z-index: 2;
+  padding-left: 90px;
+  max-width: 720px;
+  color: #ffffff;
+}
+
+/* EYEBROW */
+.val-about-eyebrow {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin-bottom: 22px;
   opacity: 0.9;
 }
 
-.val-list{
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+/* TITLE */
+.val-about-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
 }
 
-.val-list li{
-  position: relative;
-  padding-left: 22px;
-  margin-bottom: 9px;
-  font-size: 14.5px;
-  color: rgba(17,17,17,0.86);
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .val-about-content {
+    padding-left: 60px;
+  }
+
+  .val-about-title {
+    font-size: 3.2rem;
+  }
 }
 
-.val-list li:last-child{ margin-bottom: 0; }
+@media (max-width: 768px) {
+  #val-about-hero {
+    height: 85vh;
+  }
 
-/* Custom purple bullets */
-.val-list li::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #7b2ff7, #ff2e93);
+  .val-about-content {
+    padding: 0 24px;
+  }
+
+  .val-about-title {
+    font-size: 2.4rem;
+  }
 }
 
-/* ========= Load animations ========= */
-.animate-on-load{
-  opacity: 0;
-  transform: translateY(18px);
+/* =====================================================
+ ACTUATION & AUTOMATION — AMPO STYLE
+===================================================== */
+
+#val-actuation-automation {
+  font-family: "Montserrat", sans-serif;
+  color: #1f2933;
+  background: #ffffff;
 }
 
-.animate-on-load.is-visible{
-  opacity: 1;
-  transform: translateY(0);
-  transition: all .6s ease;
+/* HERO */
+.vaa-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: 500px;
 }
 
-/* Responsive */
-@media(max-width: 576px){
-  .val-detail-card{ padding: 22px 16px; }
-  .val-detail-title{ font-size: 22px; }
-  .val-slider-frame{ height: 220px; }
+.vaa-hero-text {
+  padding: 90px;
+}
+
+.vaa-hero-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.vaa-lead {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  padding-left: 18px;
+  border-left: 4px solid #70114e;
+  margin-bottom: 22px;
+}
+
+.vaa-hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #4b5563;
+}
+
+.vaa-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BLOCKS */
+.vaa-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 460px;
+}
+
+.vaa-block:nth-child(even) {
+  background: #f7f8fa;
+}
+
+/* Reverse layout */
+.vaa-reverse {
+  direction: rtl;
+}
+
+.vaa-reverse > * {
+  direction: ltr;
+}
+
+/* IMAGE */
+.vaa-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.vaa-content {
+  padding: 80px 90px;
+}
+
+.vaa-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  border-left: 4px solid #70114e;
+}
+
+.vaa-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 22px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #374151;
+}
+
+.vaa-content p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+/* LIST */
+.vaa-content ul {
+  padding-left: 18px;
+}
+
+.vaa-content li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .vaa-hero,
+  .vaa-block {
+    grid-template-columns: 1fr;
+  }
+
+  .vaa-hero-text,
+  .vaa-content {
+    padding: 48px 24px;
+  }
+
+  .vaa-hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .vaa-content h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* =====================================================
+ 4️⃣ PUMPS — AMPO STYLE
+===================================================== */
+
+#val-pumps {
+  font-family: "Montserrat", sans-serif;
+  color: #1f2933;
+  background: #ffffff;
+}
+
+/* HERO */
+.vpm-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: 520px;
+}
+
+.vpm-hero-text {
+  padding: 90px;
+}
+
+.vpm-hero-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.vpm-lead {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  padding-left: 18px;
+  border-left: 4px solid #70114e;
+  margin-bottom: 22px;
+}
+
+.vpm-hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #4b5563;
+}
+
+.vpm-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BLOCK */
+.vpm-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+  background: #f7f8fa;
+}
+
+/* Reverse layout */
+.vpm-reverse {
+  direction: rtl;
+}
+
+.vpm-reverse > * {
+  direction: ltr;
+}
+
+/* IMAGE */
+.vpm-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.vpm-content {
+  padding: 80px 90px;
+}
+
+.vpm-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  border-left: 4px solid #70114e;
+}
+
+.vpm-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 22px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #374151;
+}
+
+.vpm-content p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+/* LIST */
+.vpm-content ul {
+  padding-left: 18px;
+}
+
+.vpm-content li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .vpm-hero,
+  .vpm-block {
+    grid-template-columns: 1fr;
+  }
+
+  .vpm-hero-text,
+  .vpm-content {
+    padding: 48px 24px;
+  }
+
+  .vpm-hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .vpm-content h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* =====================================================
+ 3️⃣ PIPES, FITTINGS & STEEL PRODUCTS
+===================================================== */
+
+#val-piping-steel {
+  font-family: "Montserrat", sans-serif;
+  color: #1f2933;
+  background: #ffffff;
+}
+
+/* HERO */
+.vps-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: 520px;
+}
+
+.vps-hero-text {
+  padding: 90px;
+}
+
+.vps-hero-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.vps-lead {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  padding-left: 18px;
+  border-left: 4px solid #70114e;
+  margin-bottom: 22px;
+}
+
+.vps-hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #4b5563;
+}
+
+.vps-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BLOCKS */
+.vps-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 480px;
+}
+
+.vps-block:nth-child(even) {
+  background: #f7f8fa;
+}
+
+/* Reverse layout */
+.vps-reverse {
+  direction: rtl;
+}
+
+.vps-reverse > * {
+  direction: ltr;
+}
+
+/* IMAGE */
+.vps-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.vps-content {
+  padding: 80px 90px;
+}
+
+.vps-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  border-left: 4px solid #70114e;
+}
+
+.vps-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 22px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #374151;
+}
+
+.vps-content p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+.vps-content ul {
+  padding-left: 18px;
+}
+
+.vps-content li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .vps-hero,
+  .vps-block {
+    grid-template-columns: 1fr;
+  }
+
+  .vps-hero-text,
+  .vps-content {
+    padding: 48px 24px;
+  }
+
+  .vps-hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .vps-content h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* =====================================================
+ 5️⃣ WELLHEAD & DRILLING EQUIPMENT
+===================================================== */
+
+#val-wellhead-drilling {
+  font-family: "Montserrat", sans-serif;
+  color: #1f2933;
+  background: #ffffff;
+}
+
+/* HERO */
+.vwd-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: 520px;
+}
+
+.vwd-hero-text {
+  padding: 90px;
+}
+
+.vwd-hero-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.vwd-lead {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  padding-left: 18px;
+  border-left: 4px solid #70114e;
+  margin-bottom: 22px;
+}
+
+.vwd-hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #4b5563;
+}
+
+.vwd-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BLOCKS */
+.vwd-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 480px;
+}
+
+.vwd-block:nth-child(even) {
+  background: #f7f8fa;
+}
+
+/* Reverse layout */
+.vwd-reverse {
+  direction: rtl;
+}
+
+.vwd-reverse > * {
+  direction: ltr;
+}
+
+/* IMAGE */
+.vwd-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.vwd-content {
+  padding: 80px 90px;
+}
+
+.vwd-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  border-left: 4px solid #70114e;
+}
+
+.vwd-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 22px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #374151;
+}
+
+.vwd-content p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+.vwd-content ul {
+  padding-left: 18px;
+}
+
+.vwd-content li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .vwd-hero,
+  .vwd-block {
+    grid-template-columns: 1fr;
+  }
+
+  .vwd-hero-text,
+  .vwd-content {
+    padding: 48px 24px;
+  }
+
+  .vwd-hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .vwd-content h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* =====================================================
+ INSTRUMENTATION & SPECIALTY ITEMS
+===================================================== */
+
+#val-instrumentation-specialty {
+  font-family: "Montserrat", sans-serif;
+  color: #1f2933;
+  background: #ffffff;
+}
+
+/* HERO */
+.vis-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: 520px;
+}
+
+.vis-hero-text {
+  padding: 90px;
+}
+
+.vis-hero-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.vis-lead {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  padding-left: 18px;
+  border-left: 4px solid #70114e;
+  margin-bottom: 22px;
+}
+
+.vis-hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #4b5563;
+}
+
+.vis-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BLOCKS */
+.vis-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 480px;
+}
+
+.vis-block:nth-child(even) {
+  background: #f7f8fa;
+}
+
+/* Reverse layout */
+.vis-reverse {
+  direction: rtl;
+}
+
+.vis-reverse > * {
+  direction: ltr;
+}
+
+/* IMAGE */
+.vis-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.vis-content {
+  padding: 80px 90px;
+}
+
+.vis-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  border-left: 4px solid #70114e;
+}
+
+.vis-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 22px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #374151;
+}
+
+.vis-content p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+.vis-content ul {
+  padding-left: 18px;
+}
+
+.vis-content li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .vis-hero,
+  .vis-block {
+    grid-template-columns: 1fr;
+  }
+
+  .vis-hero-text,
+  .vis-content {
+    padding: 48px 24px;
+  }
+
+  .vis-hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .vis-content h3 {
+    font-size: 1.6rem;
+  }
 }
