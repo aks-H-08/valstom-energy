@@ -847,3 +847,37 @@ font-size: 15px;
     font-size: 26px;
   }
 }
+
+.ve-card-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #7c1d4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Arrow icon */
+.ve-arrow-icon {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
+  transform: translateX(1px);
+}
+
+/* Hover */
+.ve-equipment-card:hover .ve-card-arrow {
+  background: #5c1d3a; /* your brand maroon */
+  transform: translateX(4px);
+}
+
+/* Mobile tap feedback */
+.ve-card-arrow:active {
+  transform: scale(0.95);
+}

@@ -517,7 +517,7 @@
     SCROLL EFFECTS
 ========================== */
 .ve-header.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: white;
     backdrop-filter: blur(20px);
     box-shadow: 0 4px 20px rgba(91, 27, 110, 0.15);
     padding: 10px 20px;
