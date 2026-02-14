@@ -228,3 +228,33 @@
     font-size: 15.5px;
   }
 }
+
+
+.ve-footer-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+  margin-left: 30px;
+}
+
+.ve-footer-social-link {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-size: 16px;
+
+  transition: all 0.3s ease;
+}
+
+.ve-footer-social-link:hover {
+  background: #ffffff;
+  color: #7c1d4a; /* Valstom brand maroon */
+  transform: translateY(-3px);
+}
