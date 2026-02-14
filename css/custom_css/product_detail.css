@@ -183,7 +183,7 @@
   height: 100vh;
   min-height: 520px;
   background-image: url("../../images/products_set/pipes/LANDSCAPE-PIPES\ \,\ FITTING\ &FLANGES.jpg"); /* replace with your image */
-  background-size: contain;
+  background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
   display: flex;
