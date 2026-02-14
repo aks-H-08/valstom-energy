@@ -294,6 +294,7 @@ ol {
 ul li,
 ol li {
   padding: 10px 0 10px 0;
+  line-height: 0.95 !important;
 }
 
 ul li > ul,
