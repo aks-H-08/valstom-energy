@@ -372,6 +372,19 @@
   align-items: center;
 }
 
+#val-about-herocontact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/CONTACT\ US\ -LANDSCAPE.jpg"); /* replace with your image */
+  background-size: fill;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
 #val-about-hero3 {
   position: relative;
   width: 100%;
