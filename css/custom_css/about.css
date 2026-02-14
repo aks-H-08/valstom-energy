@@ -25,7 +25,7 @@ img {
 }
 
 .valstom-content {
-  flex: 1;
+  flex: 1.5;
   position: relative;
 }
 
@@ -417,7 +417,7 @@ img {
   .core-values-wrapper {
     grid-template-columns: 1fr;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .valstom-content::before,
