@@ -320,17 +320,16 @@
   text-transform: uppercase;
 
   color: rgba(17,17,17,0.88);
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(123,47,247,0.12),
     rgba(255,46,147,0.08)
   );
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.08); */
 }
 
 /* Optional icon before title */
 .val-map-title::before{
-  content:"📍";
   font-size: 15px;
   margin-right: 6px;
 }
