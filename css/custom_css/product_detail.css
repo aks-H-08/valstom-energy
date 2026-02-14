@@ -46,8 +46,8 @@
 }
 
 .vfc-hero-image img {
-  width: 80%;
-  height: 80%;
+  width: 700px;
+  height: 700px;
   object-fit: contain;
 }
 
@@ -73,8 +73,8 @@
 
 /* IMAGE */
 .vfc-image img {
-  width: 80%;
-  height: 80%;
+  width: 700px;
+  height: 700px;
   object-fit: contain;
 }
 
@@ -352,8 +352,8 @@
 
 /* IMAGE */
 .vaa-image img {
-  width: 80%;
-  height: 80%;
+  width: 700px;
+  height: 700px;
   object-fit: contain;
 }
 
