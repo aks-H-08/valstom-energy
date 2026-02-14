@@ -850,15 +850,19 @@ font-size: 15px;
 
 .ve-card-arrow {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 32px;
-  height: 32px;
+  bottom: 20px;
+  right: 20px;
+
+  width: 42px;
+  height: 42px;
+
   border-radius: 50%;
-  background: #7c1d4a;
+  /* background: #9ca3af; */
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-decoration: none;
   transition: all 0.25s ease;
 }
@@ -873,11 +877,28 @@ font-size: 15px;
 
 /* Hover */
 .ve-equipment-card:hover .ve-card-arrow {
-  background: #5c1d3a; /* your brand maroon */
+  /* background: #7c1d4a; your brand maroon */
   transform: translateX(4px);
 }
 
 /* Mobile tap feedback */
 .ve-card-arrow:active {
   transform: scale(0.95);
+}
+
+
+
+.ve-sector-arrow1 {
+  width: 70px;
+  height: 40px;
+
+  background-image: url("../../images/arrow.png"); /* <-- your generated PNG */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  display: inline-block;
+  margin-top: 10px;
+
+  transition: transform 0.35s ease, opacity 0.35s ease;
 }
