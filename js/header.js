@@ -206,16 +206,7 @@ class VANavbar {
             this.header.classList.remove('scrolled');
         }
         
-        // Hide/show on scroll direction
-        const scrollDelta = currentScrollY - this.lastScrollY;
-        
-        if (scrollDelta > 5 && currentScrollY > 100) {
-            this.header.style.transform = 'translateY(-100%)';
-        } else if (scrollDelta < -5) {
-            this.header.style.transform = 'translateY(0)';
-        }
-        
-        this.lastScrollY = currentScrollY;
+       
     }
 
     handleResize() {
