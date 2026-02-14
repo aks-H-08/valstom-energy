@@ -48,7 +48,7 @@
 .vfc-hero-image img {
   width: 80%;
   height: 80%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* BLOCKS */
@@ -75,7 +75,7 @@
 .vfc-image img {
   width: 80%;
   height: 80%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* CONTENT */
@@ -144,7 +144,7 @@
   height: 100vh;
   min-height: 520px;
   background-image: url("../../images/products_set/valves/LANDSCAPE-VALVES\ &\ FLOWCONTROL.jpg"); /* replace with your image */
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
   display: flex;
@@ -157,7 +157,7 @@
   height: 100vh;
   min-height: 520px;
   background-image: url("../../images/products_set/actuation/LANDSCAPE\ -ACTUATION\ &\ AUTOMATION.png"); /* replace with your image */
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
   display: flex;
@@ -170,7 +170,7 @@
   height: 100vh;
   min-height: 520px;
   background-image: url("../../images/products_set/pumps/4.LANDSCAPE-PUMPS.png"); /* replace with your image */
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
   display: flex;
@@ -183,7 +183,7 @@
   height: 100vh;
   min-height: 520px;
   background-image: url("../../images/products_set/pipes/LANDSCAPE-PIPES\ \,\ FITTING\ &FLANGES.jpg"); /* replace with your image */
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
   display: flex;
@@ -196,7 +196,7 @@
   height: 100vh;
   min-height: 520px;
   background-image: url("../../images/products_set/wellhead/5.LANDSCAPE-WELLHEAD\ &\ DRILLING\ EQUIPMENT\ -.png"); /* replace with your image */
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
   display: flex;
@@ -209,7 +209,7 @@
   height: 100vh;
   min-height: 520px;
   background-image: url("../../images/products_set/instrumentation/6.LANDSCAPE-INSTRUMENTATION.jpg"); /* replace with your image */
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
   display: flex;
@@ -327,7 +327,7 @@
 .vaa-hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* BLOCKS */
@@ -354,7 +354,7 @@
 .vaa-image img {
   width: 80%;
   height: 80%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* CONTENT */
@@ -461,7 +461,7 @@
 .vpm-hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* BLOCK */
@@ -485,7 +485,7 @@
 .vpm-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* CONTENT */
@@ -592,7 +592,7 @@
 .vps-hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* BLOCKS */
@@ -619,7 +619,7 @@
 .vps-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* CONTENT */
@@ -725,7 +725,7 @@
 .vwd-hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* BLOCKS */
@@ -752,7 +752,7 @@
 .vwd-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* CONTENT */
@@ -858,7 +858,7 @@
 .vis-hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* BLOCKS */
@@ -885,7 +885,7 @@
 .vis-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* CONTENT */
