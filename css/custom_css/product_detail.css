@@ -17,6 +17,7 @@
 
 .vfc-hero-text {
   padding: 90px;
+  margin-top: 90px;
 }
 
 .vfc-hero-text h2 {
@@ -100,6 +101,111 @@
   color: #374151;
 }
 
+#sv-standard-valves {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.sv-hr-gradient {
+  border: none;
+  height: 2px;
+  width: 100%;
+  /* margin: 60px 0; */
+  background: linear-gradient(
+    to right,
+    transparent,
+    #7a0c3a,
+    transparent
+  );
+}
+
+
+/* MAIN 2-COLUMN LAYOUT */
+.sv-layout {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 40px;
+  align-items: start;
+}
+
+/* SECTION TOPIC HEADING */
+.sv-topic {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.sv-topic-bar {
+  width: 5px;
+  height: 38px;
+  background-color: #7a0c3a; /* wine / maroon accent */
+  border-radius: 2px;
+}
+
+.sv-topic-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1f2933;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+
+/* LEFT COLUMN */
+.sv-left-col {
+  position: sticky;
+  top: 90px;
+}
+
+.sv-img {
+  width: 100%;
+  /* border-radius: 14px; */
+  margin-bottom: 20px;
+}
+
+.sv-title {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.sv-intro {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #444;
+}
+
+/* RIGHT COLUMN */
+.sv-right-col h3 {
+  font-size: 18px;
+  margin: 22px 0 8px;
+}
+
+.sv-right-col ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.sv-right-col li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+  .sv-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sv-left-col {
+    position: relative;
+    top: auto;
+  }
+}
+
+
 .vfc-content p {
   font-size: 1.05rem;
   line-height: 1.85;
@@ -115,6 +221,7 @@
 .vfc-content li {
   font-size: 0.95rem;
   margin-bottom: 8px;
+  line-height: 1;
 }
 
 /* RESPONSIVE */
@@ -351,7 +458,7 @@
 
 .vaa-lead {
   font-size: 1.25rem;
-  line-height: 1.9;
+  line-height: 1.5;
   padding-left: 18px;
   border-left: 4px solid #70114e;
   margin-bottom: 22px;
