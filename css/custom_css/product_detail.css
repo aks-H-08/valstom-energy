@@ -203,6 +203,19 @@
   align-items: center;
 }
 
+#val-about-heroresources {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/Downloads\ &\ Resources-BACKGROUND\ LANDSCAPE.jpg"); /* replace with your image */
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
 #val-about-hero4 {
   position: relative;
   width: 100%;
