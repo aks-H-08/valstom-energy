@@ -359,6 +359,19 @@
   align-items: center;
 }
 
+#val-about-heroenergy {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/ENERGY\ &\ PROCESSING\ -\ BACKGROUND.jpg"); /* replace with your image */
+  background-size: fill;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
 #val-about-hero2 {
   position: relative;
   width: 100%;
@@ -417,6 +430,19 @@
   height: 100vh;
   min-height: 520px;
   background-image: url("../../images/Downloads\ &\ Resources-BACKGROUND\ LANDSCAPE.jpg"); /* replace with your image */
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+#val-about-heroindustrial {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  background-image: url("../../images/INDUSTRY\ &\ MANUFACTURING\ SECTOR\ -\ BACKGROUND.jpg"); /* replace with your image */
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
