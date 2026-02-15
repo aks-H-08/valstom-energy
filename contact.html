@@ -209,7 +209,26 @@ Your inquiry will be directed to the appropriate team for response.
                   <div class="val-mapbox">
                     <div class="val-map-title">Location</div>
 
-                    <img src="images/map1.png" alt=""/>
+                    <div class="val-map-image-wrapper">
+  <img
+    src="images/map1.png"
+    alt="Dubai Location Map"
+    class="val-map-image"
+    id="dubaiMapImage"
+  />
+
+  <!-- Dubai Pin -->
+  <div
+    class="val-map-pin"
+    onclick="openDubaiMap()"
+    aria-label="Open Dubai in Google Maps"
+  >
+    <i class="fas fa-map-marker-alt"></i>
+    <span>Dubai</span>
+  </div>
+</div>
+
+
                   </div>
                 </div>
               </div>
@@ -479,5 +498,36 @@ Your inquiry will be directed to the appropriate team for response.
 
     <!-- Custom JS -->
     <script src="js/header.js"></script>
+    <script>
+  function openDubaiMap() {
+    window.open(
+      "https://www.google.com/maps/search/Valstom+Energy+DWC-LLC+P.O.+Box+455844+A3+Building,+DWC+Business+Park+Dubai,+United+Arab+Emirates/@25.0765385,55.2274861,10z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "_blank"
+    );
+  }
+
+  window.addEventListener("load", () => {
+    const img = document.getElementById("dubaiMapImage");
+    const pin = document.querySelector(".val-map-pin");
+
+    // ORIGINAL image width (VERY IMPORTANT)
+    const ORIGINAL_WIDTH = 1536; // 🔴 replace if your image width is different
+    const ORIGINAL_HEIGHT = 1024; // 🔴 replace if your image height is different
+
+    // Center of your coords
+    const pinX = 633.5;
+    const pinY = 644;
+
+    // Convert to %
+    const leftPercent = (pinX / ORIGINAL_WIDTH) * 100;
+    const topPercent = (pinY / ORIGINAL_HEIGHT) * 100;
+
+    pin.style.left = leftPercent + "%";
+    pin.style.top = topPercent + "%";
+  });
+</script>
+
+
+
   </body>
 </html>
