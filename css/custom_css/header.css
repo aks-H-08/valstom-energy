@@ -25,7 +25,7 @@
     LOGO SECTION
 ========================== */
 .ve-logo-wrap {
-    background: #fff;
+    /* background: #fff; */
     padding: 12px 24px;
     border-radius: 12px 0 0 12px;
     display: flex;
@@ -51,7 +51,7 @@
 ========================== */
 .ve-nav {
     flex: 1;
-    background: #70114e;
+    /* background: #70114e; */
     border-radius: 0 12px 12px 0;
     display: flex;
     align-items: center;
@@ -406,6 +406,7 @@
         font-size: 15px;
         border-radius: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        color: white !important;
     }
 
     .ve-nav-list a::after {
@@ -480,6 +481,8 @@
         order: 10;
         width: calc(100% - 40px);
         font-size: 14px;
+        color: white !important;
+        border: solid 1px white !important;
     }
 }
 
@@ -499,6 +502,7 @@
     .ve-nav-list a {
         padding: 10px 16px;
         font-size: 14px;
+        color: white !important;
     }
 
     .ve-drop-menu a {
@@ -521,6 +525,7 @@
     backdrop-filter: blur(20px);
     box-shadow: 0 4px 20px rgba(91, 27, 110, 0.15);
     padding: 10px 20px;
+    color: black;
 }
 
 .ve-header.scrolled .ve-logo-wrap {
@@ -540,3 +545,162 @@
         padding: 8px 16px;
     }
 }
+/* ==========================
+   INITIAL HEADER (TRANSPARENT)
+========================== */
+.ve-header {
+    background: transparent;
+    box-shadow: none;
+}
+
+.ve-nav-list a,
+.ve-contact-btn {
+    color: #fff;
+}
+
+.ve-contact-btn {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Logo visibility */
+.logo {
+    height: 40px;
+    transition: opacity 0.3s ease;
+}
+
+.logo-color {
+    display: none;
+}
+
+.logo-white {
+    display: block;
+}
+
+/* ==========================
+   SCROLLED HEADER
+========================== */
+.ve-header.scrolled {
+    background: #ffffff;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 20px rgba(91, 27, 110, 0.15);
+}
+
+/* Text color change */
+.ve-header.scrolled .ve-nav-list a {
+    color: #70114e;
+}
+
+.ve-header.scrolled .ve-nav-list a:hover {
+    background: rgba(112, 17, 78, 0.1);
+}
+
+.ve-header.scrolled .ve-contact-btn {
+    color: #70114e;
+    border-color: #70114e;
+}
+
+.ve-header.scrolled .ve-contact-btn:hover {
+    background: #70114e;
+    color: #fff;
+}
+
+/* Logo swap */
+.ve-header.scrolled .logo-white {
+    display: none;
+}
+
+.ve-header.scrolled .logo-color {
+    display: block;
+}
+
+/* Initial hamburger (transparent header) */
+.ve-menu-toggle span {
+    background: #fff;
+}
+
+/* Scrolled hamburger */
+.ve-header.scrolled .ve-menu-toggle span {
+    background: #70114e;
+}
+/* ==========================
+   DROPDOWN MENU - ALWAYS PURPLE
+========================== */
+.ve-drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;  
+    color: #70114e;          /* ALWAYS purple */
+    border-radius: 12px;
+    padding: 12px 0;
+    min-width: 280px;
+    box-shadow: 0 12px 40px rgba(91, 27, 110, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 10000;
+    list-style: none;
+    margin-top: 8px;
+}
+.ve-drop-menu a {
+    color: #70114e;
+    padding: 10px 24px;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.ve-drop-menu::before {
+    display: none;
+}
+@media (max-width: 768px) {
+    .ve-drop-menu {
+        background: #ffffff;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .ve-drop-menu {
+        position: static;
+        background: #5e0f44;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        border-left: 3px solid transparent;
+    }
+
+    .ve-dropdown.open .ve-drop-menu {
+        max-height: 500px;
+        padding: 8px 0;
+        border-left: 3px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .ve-drop-menu li {
+        width: 100%;
+    }
+
+    .ve-drop-menu a {
+        color: #ffffff;
+        padding: 12px 24px;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.25s ease;
+    }
+
+    .ve-drop-menu a:hover {
+        background: rgba(255, 255, 255, 0.12);
+        padding-left: 30px;
+    }
+
+    .ve-drop-menu li:last-child a {
+        border-bottom: none;
+    }
+}
+
