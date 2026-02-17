@@ -58,7 +58,7 @@
 
 .val-input:focus{
   border-color: #70114e;
-  box-shadow: 0 0 0 5px rgba(123,47,247,0.14);
+  /* box-shadow: 0 0 0 5px rgba(123,47,247,0.14); */
 }
 
 /* Button */
@@ -74,17 +74,17 @@
 
   color: #fff;
   background: linear-gradient(to left, #70114e 400%, #70114e 10%, #70114e 100%);
-  box-shadow: 0 14px 28px rgba(123,47,247,0.18);
+  /* box-shadow: 0 14px 28px rgba(123,47,247,0.18); */
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .val-btn-send:hover{
   transform: translateY(-2px);
-  box-shadow: 0 20px 42px rgba(123,47,247,0.24);
+  /* box-shadow: 0 20px 42px rgba(123,47,247,0.24); */
 }
 
 .val-btn-send:active{
-  transform: translateY(0);
+  /* transform: translateY(0); */
 }
 
 /* ===========================
