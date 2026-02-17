@@ -902,3 +902,10 @@ font-size: 15px;
 
   transition: transform 0.35s ease, opacity 0.35s ease;
 }
+
+.ve-sector-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
